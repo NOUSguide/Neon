@@ -16,7 +16,7 @@
 /// Types adopting the `Frameable` protocol calculate specific `frame` information, as well as provide the
 /// frame information about their `superview` or `superlayer`.
 ///
-public protocol Frameable : class {
+public protocol Frameable : AnyObject {
   
     var frame: CGRect { get set }
     var superFrame: CGRect { get }
